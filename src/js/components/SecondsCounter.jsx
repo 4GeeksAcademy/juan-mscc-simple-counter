@@ -1,8 +1,14 @@
 import React from "react";
+
+
+
+//include images into your bundle
+import rigoImage from "../../img/rigo-baby.jpg";
 import Digit from "./Digit";
 
+
 const SecondsCounter = (props) => {
-    let seconds = props.seconds
+	let seconds = props.seconds
     let digits = []
     for (let i = 0; i < 6; i++){
         if (seconds > 0){
@@ -19,13 +25,13 @@ const SecondsCounter = (props) => {
     {console.log(digits)}
     {console.log(secondsSeparated)}
 
-    return (
-        <div className="container bg-black py-5" style={{maxWidth: "600px"}}>
+	return (
+		<div className="container bg-black py-5" style={{maxWidth: "600px"}}>
             <div className="row column-gap-3 justify-content-center mx-4">
+				<Digit icon="hola"/>
                 {secondsSeparated}
             </div>
         </div>
-    );
-}
-
+	);
+};
 export default SecondsCounter
