@@ -1,8 +1,15 @@
 import React from "react";
 
 const Digit = (props) => {
+    if ('icon' in props) {
+        return (
+            <div className="col-md-auto bg-dark border border-1 rounded px-3">
+            <p className="h1 text-light"></p>
+        </div>
+        )
+    }
     return (
-        <div className="col-md-auto bg-dark border radius-2 px-3">
+        <div className="col-md-auto bg-dark border border-1 rounded px-3">
             <p className="h1 text-light">{props.number}</p>
         </div>
     )

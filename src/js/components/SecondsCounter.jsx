@@ -13,17 +13,16 @@ const SecondsCounter = (props) => {
         digits.unshift(0)
     }
 
+    let secondsSeparated = digits.map((num, index) => {
+        return <Digit key={index} number={num} />
+    })
+    {console.log(digits)}
+    {console.log(secondsSeparated)}
 
     return (
         <div className="container bg-black py-5" style={{maxWidth: "600px"}}>
             <div className="row column-gap-3 justify-content-center mx-4">
-                {console.log(digits)}
-                <Digit number={digits[0]} />
-                <Digit number={digits[1]} />
-                <Digit number={digits[2]} />
-                <Digit number={digits[3]} />
-                <Digit number={digits[4]} />
-                <Digit number={digits[5]} />
+                {secondsSeparated}
             </div>
         </div>
     );
