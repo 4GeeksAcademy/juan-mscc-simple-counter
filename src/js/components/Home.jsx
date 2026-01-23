@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<div className="text-center">
             
-			<SecondsCounter seconds={1234}/>
+			<SecondsCounter seconds={568962}/>
 
 		</div>
 	);
